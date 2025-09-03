@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "./ui/button";
+import bgImage from "@/assets/hhd.png"
 import PulloverHoodie from "@/assets/for weboste/Images/Apparels/jackets/Pullover Hoodie/pullover hoodie.png";
 import CBag from "@/assets/for weboste/Images/ecofriendly multipurpose bags/Cotton bag.png";
 import Pen from "@/assets/for weboste/Images/pens/Crystal pen with keychain combo.png";
@@ -12,57 +13,68 @@ import dryfit from "@/assets/for weboste/Images/Apparels/Apparels/Tshirt/Dry Fit
 import cpham from "@/assets/for weboste/Images/Corporate Hamper/Corporate Hamper/4 in 1 combo Gift set Blue - pen,  Keychain,  Diary and  Vacuum flask.jpg";
 import festivegift from "@/assets/for weboste/Images/Festive Collection/Festive Collection/Eco-Friendly Gifts/Plantable Recycled Paper Pens with Free Reusable Box.jpg";
 import { motion } from "framer-motion";
+import React, { useState, useEffect } from 'react';
 
 export default function FeatureProducts() {
   const featuredProducts = [
     {
       id: 1,
       name: "Powerbank Diary",
-      image: "/images/Diaries/powerbank.jpg",
+      href:"",
+      image: bgImage,
     },
     {
       id: 2,
       name: "Hoodie",
+      href:"",
       image: PulloverHoodie,
     },
     {
       id: 3,
       name: "Cotton Bags",
+      href:"",
       image: CBag,
     },
     {
       id: 4,
       name: "Pens",
+      href:"",
       image: Pen,
     },
     {
       id: 5,
       name: "Powerbank Diary",
+      href:"",
       image: Pb,
     },
     {
       id: 6,
       name: "Printed Mug",
+      href:"",
       image: laptop,
     },
     {
       id: 7,
       name: "white zipper hoodie",
+      href:"",
       image: zipperh,
     },
     {
       id: 8,
       name: "Corporate Hamper",
+      href:"",
       image: cpham,
     },
     {
       id: 9,
       name: "dryfit",
+      href:"",
       image: dryfit,
     },
     {
       id: 10,
       name: "festive gift",
+      href:"",
       image: festivegift,
     },
     // {
@@ -120,9 +132,27 @@ export default function FeatureProducts() {
     // },
   ];
 
+  const [hoveredProduct, setHoveredProduct] = useState(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    if (hoveredProduct) {
+      document.addEventListener('mousemove', handleMouseMove);
+    }
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, [hoveredProduct]);
+
+
   return (
     <section className="py-16">
-      <motion.div  initial={{ opacity: 0, y: 20 }}
+      {/* <motion.div  initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
@@ -160,7 +190,54 @@ export default function FeatureProducts() {
             </Card>
           ))}
         </motion.div>
-      </motion.div>
+      </motion.div> */}
+
+
+          <div className="mt-6 p-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        {featuredProducts.map((product) => (
+          <div 
+            key={product.id} 
+            className="group relative cursor-none"
+            onMouseEnter={() => setHoveredProduct(product)}
+            onMouseLeave={() => setHoveredProduct(null)}
+          >
+            <img
+              alt={product.name}
+              src={product.image.src}
+              className="aspect-square w-full rounded-md bg-gray-200 object-cover 
+                         transition-transform duration-300 ease-in-out
+                         group-hover:scale-110 lg:aspect-auto lg:h-80"
+            />
+            <div className="mt-4 flex justify-between">
+              <div>
+                <h3 className="text-xl text-gray-700">
+                  <a href={product.href}>
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    {product.name}
+                  </a>
+                </h3>
+                {/* <p className="mt-1 text-sm text-gray-500">{product.color}</p> */}
+              </div>
+              {/* <p className="text-sm font-medium text-gray-900">{product.price}</p> */}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {hoveredProduct && (
+        <div
+          className="fixed pointer-events-none z-50 transform -translate-x-1/2 -translate-y-1/2
+                     bg-orange-500 text-white p-4 rounded-xl shadow-lg transition-opacity duration-200"
+          style={{
+            left: mousePosition.x,
+            top: mousePosition.y,
+          }}
+        >
+          <div className="text-center">
+            <p className="text-md opacity-90 mt-1">View Product</p>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

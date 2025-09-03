@@ -416,10 +416,10 @@ export default function Navbar() {
         {/* Bottom Navigation Links (Hidden on mobile) */}
         <div className="hidden md:block bg-gray-50 border-t border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center space-x-8 h-12">
+            <div className="flex items-center justify-center space-x-8 h-12">
               <Link
                 href="/about"
-                className="text-md md:text-lg lg:text-xl text-gray-600 hover:text-gray-900 font-medium"
+                className="text-sm md:text-lg lg:text-xl text-gray-600 hover:text-gray-900 font-medium"
               >
                 About Us
               </Link>
@@ -431,13 +431,13 @@ export default function Navbar() {
               </Link> */}
               <Link
                 href="/products"
-                className="text-md md:text-lg lg:text-xl text-gray-600 hover:text-gray-900 font-medium"
+                className="text-sm md:text-lg lg:text-xl text-gray-600 hover:text-gray-900 font-medium"
               >
                 Products
               </Link>
               <Link
                 href="/contact"
-                className="text-md md:text-lg lg:text-xl text-gray-600 hover:text-gray-900 font-medium"
+                className="text-sm md:text-lg lg:text-xl text-gray-600 hover:text-gray-900 font-medium"
               >
                 Contact
               </Link>
