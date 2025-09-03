@@ -1,0 +1,32 @@
+/**
+* @license
+*
+* Font Family: Pally
+* Designed by: Indian Type Foundry
+* URL: https://www.fontshare.com/fonts/pally
+* © 2025 Indian Type Foundry
+*
+* Pally Regular 
+* Pally Medium 
+
+*
+*/
+@font-face {
+  font-family: 'Pally-Regular';
+  src: url('../fonts/Pally-Regular.woff2') format('woff2'),
+       url('../fonts/Pally-Regular.woff') format('woff'),
+       url('../fonts/Pally-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pally-Medium';
+  src: url('../fonts/Pally-Medium.woff2') format('woff2'),
+       url('../fonts/Pally-Medium.woff') format('woff'),
+       url('../fonts/Pally-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
