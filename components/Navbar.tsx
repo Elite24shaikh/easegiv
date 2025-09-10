@@ -53,31 +53,31 @@ export default function Navbar() {
                         </h3>
                         <div className="space-y-2">
                           <div className="hover:bg-white hover:shadow-sm p-2 rounded cursor-pointer group">
-                            <span className="text-sm font-medium group-hover:text-blue-600">
+                            <span className="text-sm font-medium group-hover:text-orange-600">
                               Apparels
                             </span>
                           </div>
                           <div className="hover:bg-white hover:shadow-sm p-2 rounded cursor-pointer group">
-                            <span className="text-sm font-medium group-hover:text-blue-600">
+                            <span className="text-sm font-medium group-hover:text-orange-600">
                               Tech Gifts
                             </span>
                           </div>
                           <div className="hover:bg-white hover:shadow-sm p-2 rounded cursor-pointer group">
-                            <span className="text-sm font-medium group-hover:text-blue-600">
+                            <span className="text-sm font-medium group-hover:text-orange-600">
                               Gift Boxes & Hampers
                             </span>
                           </div>
                           <div className="hover:bg-white hover:shadow-sm p-2 rounded cursor-pointer group">
-                            <span className="text-sm font-medium group-hover:text-blue-600">
-                              Gift Boxes & Hampers
+                            <span className="text-sm font-medium group-hover:text-orange-600">
+                              Combos
                             </span>
                           </div>
                           <div className="hover:bg-white hover:shadow-sm p-2 rounded cursor-pointer group">
-                            <span className="text-sm font-medium group-hover:text-blue-600">
-                              Health & Beauty
+                            <span className="text-sm font-medium group-hover:text-orange-600">
+                              Small Categories
                             </span>
                           </div>
-                          <div className="hover:bg-white hover:shadow-sm p-2 rounded cursor-pointer group">
+                          {/* <div className="hover:bg-white hover:shadow-sm p-2 rounded cursor-pointer group">
                             <span className="text-sm font-medium group-hover:text-blue-600">
                               Books & Media
                             </span>
@@ -91,7 +91,7 @@ export default function Navbar() {
                             <span className="text-sm font-medium group-hover:text-blue-600">
                               Automotive
                             </span>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
@@ -107,37 +107,37 @@ export default function Navbar() {
                           <div className="space-y-2">
                             <Link
                               href="/category/mobiles"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Mobiles & Accessories
                             </Link>
                             <Link
                               href="/category/laptops"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Laptops & Computers
                             </Link>
                             <Link
                               href="/category/headphones"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Headphones
                             </Link>
                             <Link
                               href="/category/cameras"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Cameras
                             </Link>
                             <Link
                               href="/category/gaming"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Gaming
                             </Link>
                             <Link
                               href="/category/wearables"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Smart Watches
                             </Link>
@@ -152,37 +152,37 @@ export default function Navbar() {
                           <div className="space-y-2">
                             <Link
                               href="/category/mens-clothing"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Men's Clothing
                             </Link>
                             <Link
                               href="/category/womens-clothing"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Women's Clothing
                             </Link>
                             <Link
                               href="/category/kids-clothing"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Kids' Clothing
                             </Link>
                             <Link
                               href="/category/footwear"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Footwear
                             </Link>
                             <Link
                               href="/category/bags"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Bags & Luggage
                             </Link>
                             <Link
                               href="/category/jewelry"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Jewelry
                             </Link>
@@ -197,37 +197,37 @@ export default function Navbar() {
                           <div className="space-y-2">
                             <Link
                               href="/category/furniture"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Furniture
                             </Link>
                             <Link
                               href="/category/kitchen"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Kitchen Appliances
                             </Link>
                             <Link
                               href="/category/home-decor"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Home Decor
                             </Link>
                             <Link
                               href="/category/bedding"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Bedding & Bath
                             </Link>
                             <Link
                               href="/category/storage"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Storage & Organization
                             </Link>
                             <Link
                               href="/category/cleaning"
-                              className="block text-sm text-gray-600 hover:text-blue-600 hover:underline"
+                              className="block text-sm text-gray-600 hover:text-orange-600 hover:underline"
                             >
                               Cleaning Supplies
                             </Link>
@@ -248,7 +248,7 @@ export default function Navbar() {
                           </div>
                           <Button
                             size="sm"
-                            className="bg-blue-600 hover:bg-blue-700"
+                            className="bg-orange-600 hover:bg-slate-700"
                           >
                             Shop Now
                           </Button>
@@ -291,13 +291,13 @@ export default function Navbar() {
               {/* Sign In Button (Hidden on mobile) */}
               <Button
                 variant="ghost"
-                className="hidden md:block text-gray-700 hover:text-gray-900"
+                className="hidden md:block text-gray-700 hover:text-gray-900 bg-gray-300"
               >
                 Sign In
               </Button>
 
               {/* Sign Up Button (Hidden on mobile) */}
-              <Button className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2">
+              <Button className="hidden md:block bg-slate-950 hover:bg-orange-600 text-white px-4 py-2">
                 Sign Up
               </Button>
 
@@ -374,7 +374,7 @@ export default function Navbar() {
                       >
                         Sign In
                       </Button>
-                      <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                      <Button className="w-full bg-slate-600 hover:bg-slate-800">
                         Sign Up
                       </Button>
                     </div>
@@ -430,7 +430,7 @@ export default function Navbar() {
                 Why Us
               </Link> */}
               <Link
-                href="/products"
+                href="/product"
                 className="text-sm md:text-lg lg:text-xl text-gray-600 hover:text-gray-900 font-medium"
               >
                 Products

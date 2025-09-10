@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -111,6 +111,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-Rowan: "Rowan", sans-serif;
 }
 
 @layer base {
@@ -119,5 +120,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .body {
+    font-family: 'Rowan', serif;
   }
 }

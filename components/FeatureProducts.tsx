@@ -1,8 +1,10 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "./ui/button";
-import bgImage from "@/assets/hhd.png"
+import bgImage from "@/assets/hhd.png";
 import PulloverHoodie from "@/assets/for weboste/Images/Apparels/jackets/Pullover Hoodie/pullover hoodie.png";
 import CBag from "@/assets/for weboste/Images/ecofriendly multipurpose bags/Cotton bag.png";
 import Pen from "@/assets/for weboste/Images/pens/Crystal pen with keychain combo.png";
@@ -13,68 +15,68 @@ import dryfit from "@/assets/for weboste/Images/Apparels/Apparels/Tshirt/Dry Fit
 import cpham from "@/assets/for weboste/Images/Corporate Hamper/Corporate Hamper/4 in 1 combo Gift set Blue - pen,  Keychain,  Diary and  Vacuum flask.jpg";
 import festivegift from "@/assets/for weboste/Images/Festive Collection/Festive Collection/Eco-Friendly Gifts/Plantable Recycled Paper Pens with Free Reusable Box.jpg";
 import { motion } from "framer-motion";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 export default function FeatureProducts() {
   const featuredProducts = [
     {
       id: 1,
       name: "Powerbank Diary",
-      href:"",
+      href: "",
       image: bgImage,
     },
     {
       id: 2,
       name: "Hoodie",
-      href:"",
+      href: "",
       image: PulloverHoodie,
     },
     {
       id: 3,
       name: "Cotton Bags",
-      href:"",
+      href: "",
       image: CBag,
     },
     {
       id: 4,
       name: "Pens",
-      href:"",
+      href: "",
       image: Pen,
     },
     {
       id: 5,
       name: "Powerbank Diary",
-      href:"",
+      href: "",
       image: Pb,
     },
     {
       id: 6,
       name: "Printed Mug",
-      href:"",
+      href: "",
       image: laptop,
     },
     {
       id: 7,
       name: "white zipper hoodie",
-      href:"",
+      href: "",
       image: zipperh,
     },
     {
       id: 8,
       name: "Corporate Hamper",
-      href:"",
+      href: "",
       image: cpham,
     },
     {
       id: 9,
       name: "dryfit",
-      href:"",
+      href: "",
       image: dryfit,
     },
     {
       id: 10,
       name: "festive gift",
-      href:"",
+      href: "",
       image: festivegift,
     },
     // {
@@ -132,23 +134,29 @@ export default function FeatureProducts() {
     // },
   ];
 
-  const [hoveredProduct, setHoveredProduct] = useState(null);
+  // THIS CODE IS FIXED THE PRODUCT UNDERLINE ISSUE OF CUSTOM HOVER CURSOR
+  type Product = {
+    id: number;
+    name: string;
+    href: string;
+    image: typeof bgImage;
+  };
+  const [hoveredProduct, setHoveredProduct] = useState<Product | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
     if (hoveredProduct) {
-      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener("mousemove", handleMouseMove);
     }
 
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener("mousemove", handleMouseMove);
     };
   }, [hoveredProduct]);
-
 
   return (
     <section className="py-16">
@@ -192,11 +200,24 @@ export default function FeatureProducts() {
         </motion.div>
       </motion.div> */}
 
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="text-3xl font-bold text-gray-900 text-center"
+      >
+        Featured Products
+      </motion.h2>
 
-          <div className="mt-6 p-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="mt-6 p-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+      >
         {featuredProducts.map((product) => (
-          <div 
-            key={product.id} 
+          <div
+            key={product.id}
             className="group relative cursor-none"
             onMouseEnter={() => setHoveredProduct(product)}
             onMouseLeave={() => setHoveredProduct(null)}
@@ -222,7 +243,7 @@ export default function FeatureProducts() {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
 
       {hoveredProduct && (
         <div
@@ -235,6 +256,12 @@ export default function FeatureProducts() {
         >
           <div className="text-center">
             <p className="text-md opacity-90 mt-1">View Product</p>
+            {/* <a
+              href="https://lixtanetwork.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            </a> */}
           </div>
         </div>
       )}

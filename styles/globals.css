@@ -111,6 +111,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-Rowan: "Rowan", sans-serif;
 }
 
 @layer base {
@@ -120,7 +121,7 @@
   body {
     @apply bg-background text-foreground;
   }
-  .font-pally {
-    font-family: "Pally", sans-serif;
-  }
+  .body {
+  font-family: 'Rowan', serif;
+}
 }

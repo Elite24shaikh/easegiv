@@ -40,7 +40,7 @@ const BentoCard = ({
     animate={{ opacity: 1, y: 0 }}
     whileHover={{ y: -5 }}
     transition={{ duration: 0.3 }}
-    className={`group relative overflow-hidden rounded-2xl border border-gray-800/50 bg-gray-900/50 backdrop-blur-sm p-6 hover:bg-gray-800/50 transition-all duration-300 ${className}`}
+    className={`group relative overflow-hidden rounded-2xl border border-white bg-black backdrop-blur-sm p-6 hover:bg-gray-900/50 transition-all duration-300 ${className}`}
   >
     {/* Background Gradient */}
     <div className={`absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-300 ${gradient}`} />

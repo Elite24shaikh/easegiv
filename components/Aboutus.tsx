@@ -12,9 +12,40 @@ import {
   Rocket,
   Gem,
 } from "lucide-react";
-import bulk from "@/assets/bulk.png"
+import bulk from "@/assets/bulk.png";
+import image1 from "@/assets/premimus.jpg"
+import image2 from "@/assets/laptopef.jpg"
 
 export default function AboutUsSection() {
+  const features = [
+    {
+      name: "BESPOKE",
+      description:
+        "Tailored experiences for your brand. Custom solutions that reflect your identity.",
+    },
+    {
+      name: "EFFORTLESS ",
+      description:
+        "Ease of ordering and execution. Streamlined process from concept to delivery.",
+    },
+    // { name: "Dimensions", description: '6.25" x 3.55" x 1.15"' },
+    {
+      name: "RELIABLE",
+      description:
+        "Timely delivery, even at scale. Advanced logistics for enterprise volumes.",
+    },
+    {
+      name: "PREMIUM",
+      description:
+        "Quality products from trusted manufacturers. Handpicked suppliers with proven excellence.",
+    },
+    // {
+    //   name: "Considerations",
+    //   description:
+    //     "Made from natural materials. Grain and color vary with each item.",
+    // },
+  ];
+
   return (
     <section className="bg-white py-16 lg:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,6 +83,14 @@ export default function AboutUsSection() {
               that are premium, purposeful, and on time.
             </p>
           </div>
+          {/* <iframe
+                        className="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/6a4khfp9AOg?si=UFAxc73_pTKuHPOd&autoplay=1&loop=1"
+                        title="YouTube video player"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        style={{ border: 0 }}
+                    ></iframe> */}
         </div>
 
         {/* What We Offer - Clean Section */}
@@ -108,18 +147,18 @@ export default function AboutUsSection() {
             ))}
           </div> */}
 
-
-            {/* BENTO GRID */}
+          {/* BENTO GRID */}
 
           <div className=" py-24 sm:py-32">
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-             
               <h2 className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-black sm:text-5xl">
                 Our Unique Gift Propositions
               </h2>
-               <p className="text-center text-base/7 font-semibold text-[#FE7A0E] mt-4 ">
-                Explore our curated corporate gifting services- thoughtfully tailored to
-                <br /> make every moment memorable and every gift truly impactful.
+              <p className="text-center text-base/7 font-semibold text-[#FE7A0E] mt-4 ">
+                Explore our curated corporate gifting services- thoughtfully
+                tailored to
+                <br /> make every moment memorable and every gift truly
+                impactful.
               </p>
               <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
                 <div className="relative lg:row-span-2">
@@ -127,11 +166,12 @@ export default function AboutUsSection() {
                   <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
                     <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                       <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">
-                       Bulk Gifting
+                        Bulk Gifting
                       </p>
                       <p className="mt-2 max-w-lg text-sm/6 text-gray-400 max-lg:text-center">
-                        Discover premium bulk corporate gifts for employees- a hassle free way 
-                        to cherish, honor, and strengthen your employee relationships.
+                        Discover premium bulk corporate gifts for employees- a
+                        hassle free way to cherish, honor, and strengthen your
+                        employee relationships.
                       </p>
                     </div>
                     <div className="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
@@ -154,7 +194,7 @@ export default function AboutUsSection() {
                         Sustainable Corporate Gifts
                       </p>
                       <p className="mt-2 max-w-lg text-sm/6 text-gray-400 max-lg:text-center">
-                        Make a lasting impression with our eco-friendly 
+                        Make a lasting impression with our eco-friendly
                         corporate gifts- thoughtful, sustainable, and impactful.
                       </p>
                     </div>
@@ -176,8 +216,9 @@ export default function AboutUsSection() {
                         Brand Recognition
                       </p>
                       <p className="mt-2 max-w-lg text-sm/6 text-gray-800 max-lg:text-center">
-                       Boost brand recognition and recall with the perfect branded gifts. 
-                       Elevate your company gifting strategy with personalized business gifts.
+                        Boost brand recognition and recall with the perfect
+                        branded gifts. Elevate your company gifting strategy
+                        with personalized business gifts.
                       </p>
                     </div>
                     <div className="flex flex-1 items-center justify-center px-4 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
@@ -195,11 +236,12 @@ export default function AboutUsSection() {
                   <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
                     <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                       <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">
-                       Timely Delivery even at scale
+                        Timely Delivery even at scale
                       </p>
                       <p className="mt-2 max-w-lg text-sm/6 text-gray-400 max-lg:text-center">
-                        We don’t just deliver gifts — we deliver experiences that help build relationships,
-                         enhance brand value, and create emotional connections.
+                        We don’t just deliver gifts — we deliver experiences
+                        that help build relationships, enhance brand value, and
+                        create emotional connections.
                       </p>
                     </div>
                     <div className="relative min-h-120 w-full grow">
@@ -227,7 +269,7 @@ export default function AboutUsSection() {
           </div>
 
           {/* Our Promise - Individual Cards */}
-          <div>
+          {/* <div>
             <div className="text-center mb-12">
               <h4 className="text-5xl font-bold text-black mb-4">
                 Our Promise
@@ -245,7 +287,7 @@ export default function AboutUsSection() {
                 },
                 {
                   icon: Trophy,
-                  title: "PREMIUM",
+                  title: "PREMIUM", 
                   desc: "Quality products from trusted manufacturers",
                   detail: "Handpicked suppliers with proven excellence",
                 },
@@ -276,6 +318,59 @@ export default function AboutUsSection() {
                   </p>
                 </div>
               ))}
+            </div>
+          </div> */}
+
+          <div className="bg-white">
+            <h2 className="text-3xl text-center items-center justify-center font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Our Promises
+            </h2>
+            <p className="mt-4 text-amber-600 text-center items-center justify-center text-md">
+              We are committed to delivering excellence in every aspect of our
+              products and services.
+              <br />
+              Our focus is on quality, reliability, and customer satisfaction.
+            </p>
+            <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+              <div>
+                <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+                  {features.map((feature) => (
+                    <div
+                      key={feature.name}
+                      className="border-t border-gray-200 pt-4"
+                    >
+                      <dt className="font-medium text-gray-900">
+                        {feature.name}
+                      </dt>
+                      <dd className="mt-2 text-sm text-gray-500">
+                        {feature.description}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                <img
+                  alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+                  src={image1.src}
+                  className="rounded-lg bg-gray-100 h-96 w-92 object-cover"
+                />
+                <img
+                  alt="Top down view of walnut card tray with embedded magnets and card groove."
+                  src={image2.src}
+                  className="rounded-lg bg-gray-100"
+                />
+                <img
+                  alt="Side of walnut card tray with card groove and recessed card area."
+                  src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                  className="rounded-lg bg-gray-100"
+                />
+                <img
+                  alt="Walnut card tray filled with cards and card angled in dedicated groove."
+                  src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                  className="rounded-lg bg-gray-100"
+                />
+              </div>
             </div>
           </div>
         </div>

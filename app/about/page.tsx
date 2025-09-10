@@ -30,13 +30,13 @@ export default function AboutPage() {
       </section>
 
       {/* Custom Bento Grid Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
               Our Commitment to Excellence
             </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-slate-900 text-lg max-w-2xl mx-auto">
               Everything we do is designed to provide you with the best shopping
               experience
             </p>
@@ -74,7 +74,7 @@ export default function AboutPage() {
               <div className="text-gray-400">Happy Customers</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2">10K+</div>
+              <div className="text-3xl font-bold text-white mb-2">1L+</div>
               <div className="text-gray-400">Products Sold</div>
             </div>
             <div className="text-center">

@@ -4,14 +4,18 @@ import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { useState, useEffect } from "react";
+import banner1 from "@/assets/banner1.jpg";
+import banner2 from "@/assets/banner2.jpg";
+import banner3 from "@/assets/banner3.jpg";
+import banner4 from "@/assets/banner4.jpg";
 
 export default function Header() {
   // Background images - replace these URLs with your actual images
   const backgroundImages = [
-    "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80", // printing/business
-    "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80", // design/creative
-    "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2126&q=80", // products/merchandise
-    "https://images.unsplash.com/photo-1634733988138-bf2c3a2a13fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2126&q=80", // custom printing
+    banner1.src, // printing/business
+    banner2.src, // design/creative
+    banner3.src, // products/merchandise
+    banner4.src, // custom printing
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -76,7 +80,7 @@ export default function Header() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-xl md:text-4xl lg:text-7xl font-bold text-white drop-shadow-lg"
+          className="font-Rowan text-xl md:text-4xl lg:text-7xl font-bold text-white drop-shadow-lg"
         >
          Design. Print. Deliver.{" "}
           <br />

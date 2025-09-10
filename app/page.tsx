@@ -7,6 +7,7 @@ import Faq from "@/components/Faq"
 import PopularProducts from "@/components/PopularProducts"
 import Propositions from "@/components/Propositions"
 import Aboutus from "@/components/Aboutus"
+import ContactUs from "@/components/contact"
 
 
 export default function HomePage() {
@@ -25,6 +26,7 @@ export default function HomePage() {
       <Aboutus/>
 
       <Faq/>
+      <ContactUs/>
 
       <Footer/>
     </div>

@@ -1,9 +1,6 @@
 import FeatureProducts from "@/components/FeatureProducts"
 import PopularProducts from "@/components/PopularProducts"
-export default function ProductPage() {
-
-
-
+export default function Products() {
   return (
     <div className="min-h-screen bg-white">
       
