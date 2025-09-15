@@ -33,8 +33,8 @@ const ContactUs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r bg-amber-700 text-white py-20">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <div className="relative  text-black py-20">
+        <div className="absolute inset-0"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Get In Touch

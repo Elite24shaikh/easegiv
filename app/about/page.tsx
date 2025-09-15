@@ -4,6 +4,8 @@ import { CustomBentoGrid } from "@/components/ui/bento";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import logo from "@/assets/logo.png";
+import Footer from "@/components/Footer";
+
 
 export default function AboutPage() {
   return (
@@ -14,13 +16,13 @@ export default function AboutPage() {
       </section>
 
       {/* Feature Cards Section */}
-      <section className="py-20 bg-gray-900/50">
+      <section className="py-20 bg-[#212842]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Why Choose Us
             </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-white text-lg max-w-2xl mx-auto">
               Discover what makes us different and why thousands of customers
               trust us
             </p>
@@ -46,7 +48,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="py-20 bg-gray-900/30">
+      <section className="py-20 bg-[#212842]">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">
             Our Story
@@ -90,7 +92,9 @@ export default function AboutPage() {
       </section>
     </div>
   );
+
 }
+  <Footer/>
 
 // Custom Hero Section Component
 function CustomHeroSection() {
@@ -189,7 +193,7 @@ function CustomFeatureCards() {
         >
           <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg border border-slate-200 dark:border-slate-700 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div className="mt-4">
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-orange-600 transition-colors">
                 {feature.title}
               </h3>
               <p className="text-slate-600 dark:text-slate-300 text-sm mt-2 leading-relaxed">
@@ -201,4 +205,5 @@ function CustomFeatureCards() {
       ))}
     </div>
   );
+
 }
