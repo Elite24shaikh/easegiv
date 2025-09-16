@@ -167,7 +167,7 @@ export default function AboutUsSection() {
                         4K Quality
                       </span>
                     </div>
-                  </div>
+                  </div>``
 
                   {/* Video Frame Container */}
                   <div 
@@ -230,7 +230,7 @@ export default function AboutUsSection() {
                         </div>
                       </div>
 
-                      {/* Corner Decorations */}
+                      {/* Corner Decorations HI GUYS WE ARE BUILDING THIS WEBSITE SINCE JUNE AND ITS NOT GETTING AHEAD*/}
                       <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-white/30 rounded-tr-xl"></div>
                       <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-white/30 rounded-bl-xl"></div>
                     </div>
